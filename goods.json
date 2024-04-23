@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Кружка",
+        "image": "good-1.jpg",
+        "altText": "Кружка",
+        "price": 999,
+        "sale": true,
+        "oldPrice": 2000
+    },
+    {
+        "title": "Чёрная футболка",
+        "image": "good-2.jpg",
+        "altText": "Чёрная футболка",
+        "price": 1499
+    },
+    {
+        "title": "Синяя толстовка",
+        "image": "good-3.jpg",
+        "altText": "Синяя толстовка",
+        "price": 2499
+    }
+]
