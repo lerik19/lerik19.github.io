@@ -4,7 +4,7 @@ const catalog       = document.querySelector(".catalog-list");
 const url       = "https://lerik19.github.io/goods.json";
 const devUrl    = "http://localhost:5500/goods.json";
 
-fetch(devUrl)
+fetch(url)
     .then( response => response.json() )
     .then( data => {
         addGoods(data);
