@@ -1,1 +1,40 @@
 @import url("style.css");
+
+
+.doc-item:not(:last-child) {
+    margin-bottom: var(--custom-space-4);
+}
+
+.doc-item {
+    display: grid;
+    row-gap: var(--custom-space-2);
+    column-gap: var(--custom-space-3);
+
+    grid-template-areas: 
+        "preview title"
+        "preview content"
+        "preview source";
+}
+.doc-item:nth-child(even) {
+    grid-template-areas: 
+        "title preview"
+        "content preview"
+        "source preview";
+}
+
+.doc-item > .content {
+    margin-right: auto;
+}
+.doc-item:nth-child(even) > .content {
+    margin-left: auto;
+}
+
+.doc-item > .preview {
+    grid-area: preview;
+}
+.doc-item > .content{
+    grid-area: content;
+}
+.doc-item > .source {
+    grid-area: source;
+}
