@@ -32,7 +32,11 @@
 
 .good-card.sale::before{
     transition: transform .5s;
+    -moz-transition: transform .5s;
+    -webkit-transition: transform .5s;
 }
 .good-card.sale:hover::before {
     transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
