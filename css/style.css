@@ -147,6 +147,13 @@
     opacity: .8;
 }
 
+.nav-link {
+    text-align: center;
+}
+.navbar-brand {
+    margin-bottom: var(--custom-space-3);
+}
+
 .page {
     color: var(--custom-dark-1);
 }
