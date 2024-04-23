@@ -48,3 +48,9 @@
         border-width: 1px;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .preview-wrapper {
+        height: 200px;
+    }
+}
