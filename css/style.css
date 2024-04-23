@@ -108,31 +108,6 @@
     color: var(--custom-dark-1);
 }
 
-.main-content > .lead {
-    position: relative;
-    background-color: rgba(0, 0, 0, .7);
-}
-.main-content > .lead::before {
-    content: "";
-
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-
-    background-image: url("https://optim.tildacdn.pub/tild3361-3263-4337-b437-626332626234/-/format/webp/image.png");
-    background-position: bottom left;
-    background-size: cover;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-}
-
-.main-content > .lead > .content-wrapper {
-    background-color: white;
-}
-
-.content > *:not(:last-child) {
+.content > .content-text:not(:last-child) {
     margin-bottom: var(--custom-space-3);
 }
