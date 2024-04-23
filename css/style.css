@@ -116,10 +116,23 @@
 }
 
 
+.main-content > * > .title {
+    text-align: center;
+}
+
+.page > .footer {
+    border-top: solid 1px var(--custom-dark-1);
+}
+
+
 .page {
     color: var(--custom-dark-1);
 }
 
 .content > .content-text:not(:last-child) {
+    margin-bottom: var(--custom-space-3);
+}
+
+.title {
     margin-bottom: var(--custom-space-3);
 }

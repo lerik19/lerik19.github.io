@@ -1,6 +1,16 @@
 @import url("style.css");
 
 
+.appeals {
+    /* background-color: var(--custom-light-1); */
+    outline: solid 1px var(--custom-dark-1);
+}
+
+.appeals > .title {
+    border-bottom: solid 1px var(--custom-dark-1);
+}
+
+
 .doc-item:not(:last-child) {
     margin-bottom: var(--custom-space-4);
 }
