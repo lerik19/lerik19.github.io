@@ -124,6 +124,10 @@
     border-top: solid 1px var(--custom-dark-1);
 }
 
+.page > .header .nav-link.active {
+    text-decoration-line: underline;
+    text-underline-offset: 100%;
+}
 
 .page {
     color: var(--custom-dark-1);
