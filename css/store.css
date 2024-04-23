@@ -35,10 +35,10 @@
 
 @media screen and (max-width: 768px) {
     .good-card {
-        height: 150px;
+        height: 200px;
     }
     .preview-wrapper {
-        height: 100px;
+        height: 110px;
     }
 
     .good-card.sale::before {
