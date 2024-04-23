@@ -8,23 +8,6 @@
     height: 396px;
 }
 
-@media screen and (max-width: 768px) {
-    .good-card {
-        height: 200px;
-    }
-    .preview-wrapper {
-        height: 198px;
-    }
-}
-/* @media screen and (min-width: 992px) {
-    .good-card {
-        height: 500px;
-    }
-    .preview-wrapper {
-        height: 396px;
-    }
-} */
-
 
 .good-card.sale {
     position: relative;
@@ -44,20 +27,24 @@
     border-radius: 50%;
     border: solid 3px white;
     color: white;
-    /* font-size: 18px; */
+    font-size: 16px;
 
-    top: 10px;
-    right: 10px;
+    top: 5%;
+    right: 5%;
 }
 
+@media screen and (max-width: 768px) {
+    .good-card {
+        height: 150px;
+    }
+    .preview-wrapper {
+        height: 100px;
+    }
 
-/* .good-card.sale::before{
-    transition: transform .5s;
-    -moz-transition: transform .5s;
-    -webkit-transition: transform .5s;
+    .good-card.sale::before {
+        width: 30px;
+        height: 30px;
+        font-size: 8px;
+        border-width: 1px;
+    }
 }
-.good-card.sale:hover::before {
-    transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-} */
