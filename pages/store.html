@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/store.css">
+
+    <script src="../scripts/store.js" defer></script>
 </head>
 <body class="page">
     <header class="header container p-3 pt-2">
@@ -42,45 +44,20 @@
             <h2 class="title invisible">Каталог товаров</h2>
 
             <ul class="catalog-list list-unstyled row g-3">
-                <template class="good-template">
+                <template id="good-template">
                     <li class="catalog-item col-lg-4 col-sm-12">
                         <article class="good-card d-flex flex-column align-items-center border border-secondary p-1">
                             <h3 class="title order-2"></h3>
                             <div class="preview-wrapper w-100 border-bottom border-secondary pb-1 overflow-hidden d-flex align-items-center">
-                                <img class="preview w-100 h-auto" src="" alt="">
+                                <img class="preview w-100 h-auto" src="../img/" alt="">
                             </div>
-                            <span class="price order-2"></span>
+                            <div class="price-wrapper order-2">
+                                <span class="old-price text-decoration-line-through text-secondary"></span>
+                                <span class="price"></span>
+                            </div>
                         </article>
                     </li>
                 </template>
-
-                <li class="catalog-item col-lg-4 col-sm-12">
-                    <article class="good-card d-flex flex-column align-items-center border border-secondary p-1">
-                        <h3 class="title order-2">Кружка</h3>
-                        <div class="preview-wrapper w-100 border-bottom border-secondary pb-1 overflow-hidden d-flex align-items-center">
-                            <img class="preview w-100 h-auto" src="../img/good-1.jpg" alt="Кружка" width="604" height="604">
-                        </div>
-                        <span class="price order-2">999 руб</span>
-                    </article>
-                </li>
-                <li class="catalog-item col-lg-4 col-sm-12">
-                    <article class="good-card d-flex flex-column align-items-center border border-secondary p-1">
-                        <h3 class="title order-2">Чёрная футболка</h3>
-                        <div class="preview-wrapper w-100 border-bottom border-secondary pb-1 overflow-hidden d-flex align-items-center">
-                            <img class="preview w-100 h-auto" src="../img/good-2.jpg" alt="Чёрная футболка" width="817" height="758">
-                        </div>
-                        <span class="price order-2">1499 руб</span>
-                    </article>
-                </li>
-                <li class="catalog-item col-lg-4 col-sm-12">
-                    <article class="good-card d-flex flex-column align-items-center border border-secondary p-1">
-                        <h3 class="title order-2">Синяя толстовка</h3>
-                        <div class="preview-wrapper w-100 border-bottom border-secondary pb-1 overflow-hidden d-flex align-items-center">
-                            <img class="preview w-100 h-auto" src="../img/good-3.jpg" alt="Синяя толстовка" width="992" height="998">
-                        </div>
-                        <span class="price order-2">2499 руб</span>
-                    </article>
-                </li>
             </ul>
         </section>
 
